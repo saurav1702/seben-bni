@@ -169,3 +169,9 @@ html.leaving body{opacity:0;transition:opacity .25s ease}
   .crule{position:static;width:24vw;margin:0 auto}
   .s13 .stage{gap:7vw}
 }
+
+/* animated figures (class added by nav.js only while counting) */
+.num{display:inline-block;text-align:right;font-variant-numeric:lining-nums tabular-nums}
+.num::before{content:attr(data-final);display:block;height:0;overflow:hidden;visibility:hidden}
+.w{display:inline-block}
+.bar{transform-origin:left center}
